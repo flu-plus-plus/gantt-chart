@@ -1,40 +1,80 @@
 {
   projects: [
-    {
-      name: Stride
-    }
+    { name: "Preparations" }
+    { name: "Checkpointing" }
+    { name: "Parallelization" }
+    { name: "Population Gen" }
+    { name: "Multi-region" }
+    { name: "Visualization" }
   ]
 
+  # List of Sundays
+  # Week 1: 2017-02-12
+  # Week 2: 2017-02-19
+  # Week 3: 2017-02-26
+  # Week 4: 2017-03-05
+  # Week 5: 2017-03-12
+  # Week 6: 2017-03-19
+  # Week 7: 2017-03-26
+
   tasks: [
+    ##############################
+    ## Preparations
+    ##############################
     {
-      name: Design widget
-      begin: 2016-10-14
-      duration: 7
-      people: Farquaad
-      project: stride
+      project: Preparations
+      name: Website
+      duration: 5
+      begin: 2017-02-12
+      people: ["Lynn", "Sibert"]
     }
     {
-      name: Set up widget production line
-      begin: 2016-10-19
-      duration: 6
-      people: Zack
-      project: stride
+      project: Preparations
+      name: Repository
+      duration: 5
+      begin: 2017-02-12
+      people: Lynn
     }
     {
-      name: Manufacture widgets
-      duration: 7
-      people: Carrie
-      deps: ["design widget", "widget prod line"]
-      project: stride
+      project: Preparations
+      name: Jenkins setup
+      duration: 5
+      begin: 2017-02-19
+      people: Cédric
+    }
+    {
+      project: Preparations
+      name: Travis-CI setup
+      duration: 5
+      begin: 2017-02-19
+      people: Jonathan
+    }
+    {
+      project: Preparations
+      name: Gantt chart
+      duration: 5
+      begin: 2017-02-19
+      people: Lynn
+    }
+    ##############################
+    ## Checkpointing
+    ##############################
+    {
+      project: Checkpointing
+      name: HDF5 prototype
+      duration: 5
+      begin: 2017-02-26
     }
   ]
 
   milestones: [
+    /*
     {
-      name: Widgets start shipping
+      name: Alpha release
       start: 2016-10-30
       deps: ["mftr widgets"]
       project: stride
     }
+    */
   ]
 }
