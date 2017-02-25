@@ -146,14 +146,14 @@
       project: Multi-region
       name: Read air traffic data
       duration: 4
-      begin: 2017-04-11
+      begin: 2017-05-02
       deps: Working multi-region sim
     }
     {
       project: Multi-region
       name: Work load balancing
       duration: 4
-      begin: 2017-04-11
+      begin: 2017-05-02
 	    people: Jonathan
       deps: Working multi-region sim
     }
@@ -161,7 +161,7 @@
       project: Multi-region
       name: Checkpointing interop
       duration: 4
-      begin: 2017-04-11
+      begin: 2017-05-09
       deps: Working multi-region sim
     }
     ##############################
@@ -222,7 +222,6 @@
       name: Rule data structs
       duration: 4
       begin: 2017-04-11
-      deps: Discrete sampling
     }
     {
       project: Population Gen
@@ -242,7 +241,7 @@
       project: Population Gen
       name: Tests
       duration: 4
-      begin: 2017-05-02
+      begin: 2017-05-09
       deps: Rule XML parser
     }
     ##############################
@@ -271,14 +270,14 @@
       project: Visualization
       name: Data from sim to UI
       duration: 4
-      begin: 2017-05-02
+      begin: 2017-05-09
       deps: Create full UI
     }
     {
       project: Visualization
       name: Make UI look nice
       duration: 4
-      begin: 2017-05-09
+      begin: 2017-05-16
       people: Sibert
       deps: Create full UI
     }
@@ -289,12 +288,46 @@
       begin: 2017-05-16
       deps: Create full UI
     }
+    ##############################
+    ## Miscellaneous
+    ##############################
+    {
+      project: Miscellaneous
+      name: High-Level Design
+      duration: 9
+      begin: 2017-03-14
+    }
+    {
+      project: Miscellaneous
+      name: Test plan
+      duration: 4
+      begin: 2017-03-14
+    }
+    {
+      project: Miscellaneous
+      name: Test framework
+      duration: 4
+      begin: 2017-03-21
+      deps: Test plan
+    }
+    {
+      project: Miscellaneous
+      name: Documentation plan
+      duration: 4
+      begin: 2017-03-21
+    }
+    {
+      project: Miscellaneous
+      name: Prepare alpha release
+      duration: 4
+      begin: 2017-04-25
+    }
   ]
 
   milestones: [
     {
       name: Alpha release
-      start: 2016-04-23
+      start: 2016-04-30
       deps: [
         "Rule XML parser"
         "Map control"
@@ -302,6 +335,7 @@
         "TBB code rewrite"
         "Working multi-region sim"
         "Save checkpoints"
+        "Prepare alpha release"
       ]
       project: Miscellaneous
     }
