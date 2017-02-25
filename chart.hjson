@@ -1,21 +1,28 @@
 {
   projects: [
-    { name: "Preparations" }
-    { name: "Checkpointing" }
-    { name: "Parallelization" }
-    { name: "Population Gen" }
-    { name: "Multi-region" }
-    { name: "Visualization" }
+    { name: "Preparations", color: "#ffdddd" }
+    { name: "Checkpointing", color: "#ffffdd" }
+    { name: "Multi-region", color: "#ddffdd" }
+    { name: "Parallelization", color: "#ffddff" }
+    { name: "Population Gen", color: "#ffeedd" }
+    { name: "Visualization", color: "#ddddff" }
+	{ name: "Miscellaneous", color: "#dddddd" }
   ]
 
   # List of Sundays
-  # Week 1: 2017-02-12
-  # Week 2: 2017-02-19
-  # Week 3: 2017-02-26
-  # Week 4: 2017-03-05
-  # Week 5: 2017-03-12
-  # Week 6: 2017-03-19
-  # Week 7: 2017-03-26
+  # ===================
+  # Week  1: 2017-02-12
+  # Week  2: 2017-02-19
+  # Week  3: 2017-02-26 (prototypes)
+  # Week  4: 2017-03-05 (prototypes)
+  # Week  5: 2017-03-12 (High-Level Design, test plan)
+  # Week  6: 2017-03-19 (High-Level Design, test impl, doc plan)
+  # Week  7: 2017-03-26 (start implementation)
+  #  Recess: 2017-04-02
+  # Week  8: 2017-04-09
+  # Week  9: 2017-04-16 
+  # Week 10: 2017-04-23 (alpha deadline?)
+  # Week 11: 2017-04-30
 
   tasks: [
     ##############################
@@ -65,16 +72,201 @@
       duration: 5
       begin: 2017-02-26
     }
+    {
+      project: Checkpointing
+      name: Stride HDF5 spec
+      duration: 5
+      begin: 2017-03-05
+    }
+    {
+      project: Checkpointing
+      name: Serialization
+      duration: 5
+      begin: 2017-03-26
+    }
+    {
+      project: Checkpointing
+      name: Deserialization
+      duration: 5
+      begin: 2017-03-26
+    }
+    {
+      project: Checkpointing
+      name: Save checkpoints
+      duration: 5
+      begin: 2017-04-02
+    }
+    {
+      project: Checkpointing
+      name: ParaView plug-in
+      duration: 5
+      begin: 2017-04-30
+    }
+    ##############################
+    ## Multi-region
+    ##############################
+    {
+      project: Multi-region
+      name: Add MPI dependency
+      duration: 5
+      begin: 2017-02-26
+    }
+    {
+      project: Multi-region
+      name: MPI prototype
+      duration: 5
+      begin: 2017-03-05
+    }
+    {
+      project: Multi-region
+      name: Simulator MPI interface
+      duration: 5
+      begin: 2017-03-26
+    }
+    {
+      project: Multi-region
+      name: Working multi-region sim
+      duration: 5
+      begin: 2017-04-02
+    }
+    {
+      project: Multi-region
+      name: Read air traffic data
+      duration: 5
+      begin: 2017-04-09
+    }
+    {
+      project: Multi-region
+      name: Work load balancing
+      duration: 5
+      begin: 2017-04-09
+	  people: Jonathan
+    }
+    {
+      project: Multi-region
+      name: Checkpointing interop
+      duration: 5
+      begin: 2017-04-09
+    }
+    ##############################
+    ## Parallelization
+    ##############################
+    {
+      project: Parallelization
+      name: Add TBB dependency
+      duration: 5
+      begin: 2017-03-05
+    }
+    {
+      project: Parallelization
+      name: TBB prototype
+      duration: 5
+      begin: 2017-03-05
+    }
+    {
+      project: Parallelization
+      name: CMake TBB detection
+      duration: 5
+      begin: 2017-03-12
+    }
+    {
+      project: Parallelization
+      name: TBB code rewrite
+      duration: 5
+      begin: 2017-04-02
+    }
+    {
+      project: Parallelization
+      name: TBB/OpenMP config
+      duration: 5
+      begin: 2017-04-30
+    }
+    {
+      project: Parallelization
+      name: Perf analysis
+      duration: 5
+      begin: 2017-04-30
+    }
+    ##############################
+    ## Population Gen
+    ##############################
+    {
+      project: Population Gen
+      name: Discrete sampling
+      duration: 5
+      begin: 2017-04-09
+    }
+    {
+      project: Population Gen
+      name: Rule data structs
+      duration: 5
+      begin: 2017-04-09
+    }
+    {
+      project: Population Gen
+      name: Rule XML parser
+      duration: 5
+      begin: 2017-04-16
+    }
+    {
+      project: Population Gen
+      name: Command line driver
+      duration: 5
+      begin: 2017-04-23
+    }
+    {
+      project: Population Gen
+      name: Tests
+      duration: 5
+      begin: 2017-04-30
+    }
+    ##############################
+    ## Visualization
+    ##############################
+    {
+      project: Visualization
+      name: Map control
+      duration: 5
+      begin: 2017-04-16
+    }
+    {
+      project: Visualization
+      name: Chart control
+      duration: 5
+      begin: 2017-04-16
+    }
+    {
+      project: Visualization
+      name: Create full UI
+      duration: 5
+      begin: 2017-04-23
+    }
+    {
+      project: Visualization
+      name: Data from sim to UI
+      duration: 5
+      begin: 2017-04-30
+    }
+    {
+      project: Visualization
+      name: Make it look nice
+      duration: 5
+      begin: 2017-05-07
+    }
+    {
+      project: Visualization
+      name: Customization
+      duration: 5
+      begin: 2017-05-14
+    }
   ]
 
   milestones: [
-    /*
-    {
+    /* {
       name: Alpha release
-      start: 2016-10-30
-      deps: ["mftr widgets"]
-      project: stride
-    }
-    */
+      start: 2016-04-23
+      deps: ["customization"]
+      project: Total
+    } */
   ]
 }
