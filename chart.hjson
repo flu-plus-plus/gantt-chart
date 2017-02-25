@@ -110,7 +110,7 @@
       name: ParaView plug-in
       duration: 4
       begin: 2017-05-02
-      deps: []
+      deps: HDF5 spec
     }
     ##############################
     ## Multi-region
@@ -126,37 +126,43 @@
       name: MPI prototype
       duration: 4
       begin: 2017-03-07
+      deps: MPI dependency
     }
     {
       project: Multi-region
       name: Simulator MPI interface
       duration: 4
       begin: 2017-03-28
+      deps: MPI dependency
     }
     {
       project: Multi-region
       name: Working multi-region sim
       duration: 4
       begin: 2017-04-04
+      deps: MPI interface
     }
     {
       project: Multi-region
       name: Read air traffic data
       duration: 4
       begin: 2017-04-11
+      deps: Working multi-region sim
     }
     {
       project: Multi-region
       name: Work load balancing
       duration: 4
       begin: 2017-04-11
-	  people: Jonathan
+	    people: Jonathan
+      deps: Working multi-region sim
     }
     {
       project: Multi-region
       name: Checkpointing interop
       duration: 4
       begin: 2017-04-11
+      deps: Working multi-region sim
     }
     ##############################
     ## Parallelization
@@ -172,30 +178,35 @@
       name: TBB prototype
       duration: 4
       begin: 2017-03-07
+      deps: TBB dependency
     }
     {
       project: Parallelization
       name: CMake TBB detection
       duration: 4
       begin: 2017-03-14
+      deps: TBB dependency
     }
     {
       project: Parallelization
       name: TBB code rewrite
       duration: 4
       begin: 2017-04-04
+      deps: TBB dependency
     }
     {
       project: Parallelization
       name: TBB/OpenMP config
       duration: 4
       begin: 2017-05-02
+      deps: TBB code rewrite
     }
     {
       project: Parallelization
       name: Perf analysis
       duration: 4
       begin: 2017-05-02
+      deps: TBB code rewrite
     }
     ##############################
     ## Population Gen
@@ -211,24 +222,28 @@
       name: Rule data structs
       duration: 4
       begin: 2017-04-11
+      deps: Discrete sampling
     }
     {
       project: Population Gen
       name: Rule XML parser
       duration: 4
       begin: 2017-04-18
+      deps: Rule data structs
     }
     {
       project: Population Gen
       name: Command line driver
       duration: 4
       begin: 2017-04-25
+      deps: Rule XML parser
     }
     {
       project: Population Gen
       name: Tests
       duration: 4
       begin: 2017-05-02
+      deps: Rule XML parser
     }
     ##############################
     ## Visualization
@@ -250,12 +265,14 @@
       name: Create full UI
       duration: 4
       begin: 2017-04-25
+      deps: ["Map UI", "Chart UI"]
     }
     {
       project: Visualization
       name: Data from sim to UI
       duration: 4
       begin: 2017-05-02
+      deps: Create full UI
     }
     {
       project: Visualization
@@ -263,12 +280,14 @@
       duration: 4
       begin: 2017-05-09
       people: Sibert
+      deps: Create full UI
     }
     {
       project: Visualization
       name: UI customization
       duration: 4
       begin: 2017-05-16
+      deps: Create full UI
     }
   ]
 
