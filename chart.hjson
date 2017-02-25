@@ -225,13 +225,13 @@
     ##############################
     {
       project: Visualization
-      name: Map control
+      name: Map UI control
       duration: 5
       begin: 2017-04-16
     }
     {
       project: Visualization
-      name: Chart control
+      name: Chart UI control
       duration: 5
       begin: 2017-04-16
     }
@@ -249,13 +249,13 @@
     }
     {
       project: Visualization
-      name: Make it look nice
+      name: Make UI look nice
       duration: 5
       begin: 2017-05-07
     }
     {
       project: Visualization
-      name: Customization
+      name: UI customization
       duration: 5
       begin: 2017-05-14
     }

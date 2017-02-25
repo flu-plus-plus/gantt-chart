@@ -1,3 +1,3 @@
 # Gantt chart
 
-Run `pip install fuzzyfinder gantt hjson`, then `make`.
+Run `pip install fuzzyfinder python-gantt hjson`, then `make`.
