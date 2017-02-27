@@ -155,6 +155,7 @@
       name: Read air traffic data
       duration: 4
       begin: 2017-05-02
+      people: Jonathan
       deps: Working multi-region sim
     }
     {
