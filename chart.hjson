@@ -199,6 +199,7 @@
       duration: 4
       begin: 2017-04-04
       deps: TBB dependency
+      people: ["Sibert", "Jonathan"]
     }
     {
       project: Parallelization
@@ -206,6 +207,7 @@
       duration: 4
       begin: 2017-05-02
       deps: TBB code rewrite
+      people: ["Sibert", "Jonathan"]
     }
     {
       project: Parallelization
@@ -230,6 +232,7 @@
       name: Rule data structs
       duration: 4
       begin: 2017-04-11
+      people: Lynn
     }
     {
       project: Population Gen
@@ -262,12 +265,14 @@
       project: Visualization
       name: Map UI control
       duration: 4
+      people: Sibert
       begin: 2017-04-18
     }
     {
       project: Visualization
       name: Chart UI control
       duration: 4
+      people: Sibert
       begin: 2017-04-18
     }
     {
@@ -275,6 +280,7 @@
       name: Create full UI
       duration: 4
       begin: 2017-04-25
+      people: Sibert
       deps: ["Map UI", "Chart UI"]
     }
     {
@@ -282,6 +288,7 @@
       name: Data from sim to UI
       duration: 4
       begin: 2017-05-09
+      people: Sibert
       deps: Create full UI
     }
     {
@@ -297,6 +304,7 @@
       name: UI customization
       duration: 4
       begin: 2017-05-16
+      people: Sibert
       deps: Create full UI
     }
     ##############################
