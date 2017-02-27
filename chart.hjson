@@ -123,6 +123,7 @@
       project: Multi-region
       name: Add MPI dependency
       duration: 4
+      people: Jonathan
       begin: 2017-02-28
     }
     {
@@ -130,6 +131,7 @@
       name: MPI prototype
       duration: 4
       begin: 2017-03-07
+      people: Jonathan
       deps: MPI dependency
     }
     {
@@ -137,6 +139,7 @@
       name: Simulator MPI interface
       duration: 4
       begin: 2017-03-28
+      people: Jonathan
       deps: MPI dependency
     }
     {
@@ -144,6 +147,7 @@
       name: Working multi-region sim
       duration: 4
       begin: 2017-04-04
+      people: Jonathan
       deps: MPI interface
     }
     {
@@ -166,6 +170,7 @@
       name: Checkpointing interop
       duration: 4
       begin: 2017-05-09
+      people: Jonathan
       deps: Working multi-region sim
     }
     ##############################
@@ -230,6 +235,7 @@
       name: Rule data structs
       duration: 4
       begin: 2017-04-11
+      people: Jonathan
     }
     {
       project: Population Gen
