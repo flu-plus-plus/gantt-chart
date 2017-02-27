@@ -76,6 +76,7 @@
       name: HDF5 prototype
       duration: 4
       begin: 2017-02-28
+      people: Cédric
     }
     {
       project: Checkpointing
@@ -83,6 +84,7 @@
       duration: 4
       begin: 2017-03-07
       deps: HDF5 prototype
+      people: Cédric
     }
     {
       project: Checkpointing
@@ -97,6 +99,7 @@
       duration: 4
       begin: 2017-03-28
       deps: HDF5 spec
+      people: Cédric
     }
     {
       project: Checkpointing
@@ -104,6 +107,7 @@
       duration: 4
       begin: 2017-04-04
       deps: ["Serialization", "Deserialization"]
+      people: Cédric
     }
     {
       project: Checkpointing
