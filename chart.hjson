@@ -6,7 +6,7 @@
     { name: "Parallelization", color: "#ffddff" }
     { name: "Population Gen", color: "#ffeedd" }
     { name: "Visualization", color: "#ddddff" }
-	  { name: "Miscellaneous", color: "#dddddd" }
+    { name: "Miscellaneous", color: "#dddddd" }
   ]
 
   # List of Tuesdays
@@ -154,7 +154,7 @@
       name: Work load balancing
       duration: 4
       begin: 2017-05-02
-	    people: Jonathan
+      people: Jonathan
       deps: Working multi-region sim
     }
     {
@@ -172,13 +172,14 @@
       name: Add TBB dependency
       duration: 4
       begin: 2017-03-07
+      people: Lynn
     }
     {
       project: Parallelization
       name: TBB prototype
       duration: 4
       begin: 2017-03-07
-      deps: TBB dependency
+      people: Lynn
     }
     {
       project: Parallelization
@@ -186,6 +187,7 @@
       duration: 4
       begin: 2017-03-14
       deps: TBB dependency
+      people: Lynn
     }
     {
       project: Parallelization
@@ -207,6 +209,7 @@
       duration: 4
       begin: 2017-05-02
       deps: TBB code rewrite
+      people: Lynn
     }
     ##############################
     ## Population Gen
@@ -229,6 +232,7 @@
       duration: 4
       begin: 2017-04-18
       deps: Rule data structs
+      people: Lynn
     }
     {
       project: Population Gen
@@ -236,6 +240,7 @@
       duration: 4
       begin: 2017-04-25
       deps: Rule XML parser
+      people: Lynn
     }
     {
       project: Population Gen
@@ -243,6 +248,7 @@
       duration: 4
       begin: 2017-05-09
       deps: Rule XML parser
+      people: Lynn
     }
     ##############################
     ## Visualization
@@ -302,6 +308,7 @@
       name: Test plan
       duration: 4
       begin: 2017-03-14
+      people: Lynn
     }
     {
       project: Miscellaneous
@@ -309,18 +316,21 @@
       duration: 4
       begin: 2017-03-21
       deps: Test plan
+      people: Lynn
     }
     {
       project: Miscellaneous
       name: Documentation plan
       duration: 4
       begin: 2017-03-21
+      people: Lynn
     }
     {
       project: Miscellaneous
       name: Prepare alpha release
       duration: 4
       begin: 2017-04-25
+      people: Everyone
     }
   ]
 
