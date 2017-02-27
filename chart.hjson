@@ -92,6 +92,7 @@
       duration: 4
       begin: 2017-03-28
       deps: HDF5 spec
+      people: Cédric
     }
     {
       project: Checkpointing
@@ -115,6 +116,7 @@
       duration: 4
       begin: 2017-05-02
       deps: HDF5 spec
+      people: Cédric
     }
     ##############################
     ## Multi-region
@@ -321,6 +323,7 @@
       name: High-Level Design
       duration: 9
       begin: 2017-03-14
+      people: Everyone
     }
     {
       project: Miscellaneous
