@@ -188,7 +188,7 @@
       name: Checkpointing interop
       duration: 4
       begin: 2017-05-09
-      people: Jonathan
+      people: ["Jonathan", "Cédric"]
       deps: Working multi-region sim
     }
     ##############################
@@ -378,6 +378,13 @@
       begin: 2017-04-25
       people: Everyone
     }
+    {
+      project: Miscellaneous
+      name: Prepare beta release
+      duration: 4
+      begin: 2017-05-23
+      people: Everyone
+    }
   ]
 
   milestones: [
@@ -392,6 +399,19 @@
         "Working multi-region sim"
         "Save checkpoints"
         "Prepare alpha release"
+      ]
+      project: Miscellaneous
+    }    
+    {
+      name: Beta release
+      start: 2016-05-29
+      deps: [
+        "Paraview plugin"
+        "Checkpointing Interop"
+        "Perf Analysis"
+        "UI Customization"
+        "Make UI look nice"
+        "Prepare beta release"
       ]
       project: Miscellaneous
     }
