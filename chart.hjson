@@ -145,6 +145,14 @@
     }
     {
       project: Multi-region
+      name: Shared memory
+      duration: 9
+      begin: 2017-03-14
+      people: Jonathan
+      deps: MPI dependency
+    }
+    {
+      project: Multi-region
       name: Simulator MPI interface
       duration: 4
       begin: 2017-03-28
@@ -197,14 +205,14 @@
       project: Parallelization
       name: TBB prototype
       duration: 4
-      begin: 2017-03-07
+      begin: 2017-03-28
       people: Lynn
     }
     {
       project: Parallelization
       name: CMake TBB detection
       duration: 4
-      begin: 2017-03-14
+      begin: 2017-04-04
       deps: TBB dependency
       people: Lynn
     }
@@ -212,7 +220,7 @@
       project: Parallelization
       name: TBB code rewrite
       duration: 4
-      begin: 2017-04-04
+      begin: 2017-04-18
       deps: TBB dependency
       people: ["Sibert", "Jonathan"]
     }
@@ -303,7 +311,7 @@
       project: Visualization
       name: Create full UI
       duration: 4
-      begin: 2017-04-25
+      begin: 2017-03-28
       people: Sibert
       deps: ["Map UI", "Chart UI"]
     }
@@ -311,7 +319,7 @@
       project: Visualization
       name: Data from sim to UI
       duration: 4
-      begin: 2017-05-09
+      begin: 2017-04-04
       people: Sibert
       deps: Create full UI
     }
