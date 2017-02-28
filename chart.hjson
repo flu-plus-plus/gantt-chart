@@ -73,16 +73,23 @@
     ##############################
     {
       project: Checkpointing
-      name: HDF5 prototype
-      duration: 4
+      name: Add HDF5 dependency
+      duration: 2
       begin: 2017-02-28
       people: Cédric
     }
     {
       project: Checkpointing
-      name: Stride HDF5 spec
-      duration: 4
+      name: HDF5 prototype
+      duration: 3
       begin: 2017-03-07
+      people: Cédric
+    }
+    {
+      project: Checkpointing
+      name: Stride HDF5 spec
+      duration: 6
+      begin: 2017-03-14
       deps: HDF5 prototype
       people: Cédric
     }
@@ -90,7 +97,7 @@
       project: Checkpointing
       name: Serialization
       duration: 4
-      begin: 2017-03-28
+      begin: 2017-03-22
       deps: HDF5 spec
       people: Cédric
     }
@@ -113,7 +120,7 @@
     {
       project: Checkpointing
       name: ParaView plug-in
-      duration: 4
+      duration: 8
       begin: 2017-05-02
       deps: HDF5 spec
       people: Cédric
@@ -232,21 +239,21 @@
       project: Population Gen
       name: Discrete sampling
       duration: 4
-      begin: 2017-04-11
+      begin: 2017-02-28
       people: Cédric
     }
     {
       project: Population Gen
       name: Rule data structs
       duration: 4
-      begin: 2017-04-11
+      begin: 2017-02-28
       people: Lynn
     }
     {
       project: Population Gen
       name: Rule XML parser
       duration: 4
-      begin: 2017-04-18
+      begin: 2017-03-7
       deps: Rule data structs
       people: Lynn
     }
@@ -254,7 +261,7 @@
       project: Population Gen
       name: Command line driver
       duration: 4
-      begin: 2017-04-25
+      begin: 2017-03-14
       deps: Rule XML parser
       people: Lynn
     }
@@ -262,7 +269,7 @@
       project: Population Gen
       name: Tests
       duration: 4
-      begin: 2017-05-09
+      begin: 2017-03-21
       deps: Rule XML parser
       people: Lynn
     }
@@ -271,17 +278,26 @@
     ##############################
     {
       project: Visualization
+      name: Embed web control in window
+      duration: 4
+      people: Sibert
+      begin: 2017-03-07
+    }
+    {
+      project: Visualization
       name: Map UI control
       duration: 4
       people: Sibert
-      begin: 2017-04-18
+      begin: 2017-03-14
+      deps: ["Web control"]
     }
     {
       project: Visualization
       name: Chart UI control
       duration: 4
       people: Sibert
-      begin: 2017-04-18
+      begin: 2017-03-21
+      deps: ["Web control"]
     }
     {
       project: Visualization
