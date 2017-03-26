@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pxfonts}
+\author{Sibert Aerts \\ Cédric De Haes \\ Jonathan Van der Cruysse \\ Lynn Van Hauwe}
+\title{Document plan}
+\begin{document}
+	
+	\newcommand{\titleitem}[1]{\item \textbf{#1}}
+
+	\maketitle
+	
+	\section{API documentatie}
+	
+	Onze documentatie bouwt verder op het reeds bestaande Doxygen \emph{build target} voor Stride. Ieder groepslid is verantwoordelijk om zijn of haar toevoegingen aan Stride's API voldoende te documenteren.
+	
+	Tijdens pull request reviews controleert de reviewer of functies, klassen en fields voldoende gedocumenteerd zijn. Aangezien een pull request enkel na een positieve review in de master branch van onze groepsrepository gemerged kan worden, is het risico vrijwel minimaal dat een pull request met weinig of geen documentatie toch zonder review gemerged zou worden.
+	
+	\section{User manual}
+	
+	Er is nu al \'e\'en persoon per opdracht verantwoordelijk. Die persoon schrijft dat ook meteen een pagina in de user manual voor zijn of haar onderdeel. Een ander groepslid herleest die manual entry als onderdeel van een pull request review.
+	
+	Concreet is de taakverdeling nu:
+	
+	\begin{itemize}
+		\titleitem{HDF5 checkpointing:} Cédric
+		\titleitem{Generator van synthetische populaties:} Lynn
+		\titleitem{Multi-regio extensie:} Jonathan
+		\titleitem{Wetenschappelijke visualisatie:} Sibert
+	\end{itemize}
+
+\end{document}
