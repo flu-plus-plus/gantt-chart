@@ -1,0 +1,32 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{pxfonts}
+\author{\textbf{Groep \emph{flu-plus-plus}} \\ Sibert Aerts \\ Cédric De Haes \\ Jonathan Van der Cruysse \\ Lynn Van Hauwe}
+\title{Stride test-plan}
+\begin{document}
+	\newcommand{\titleitem}[1]{\item \textbf{#1}}
+	\maketitle
+	\section{Implementatie}
+	Tests zijn ge\"implementeerd via het Google C++ Testing Framework (\texttt{gtest}), zoals gebruikt door de \texttt{BatchRuns} tests die in Stride zaten bij aanvang van het protest.
+
+	Onze continuous integration servers, Travis-CI en Jenkins, voeren de tests geregeld uit. Samenwerken aan ons project doen we op GitHub, waar pull requests zelfs niet in de \textit{master}-branch gemerged kunnen worden tot Travis-CI geverifieerd heeft dat de tests geen fouten zullen geven na de merge.
+
+	\section{Workflow}
+	Pull requests met nieuwe functionaliteit worden verwacht enkele tests te bevatten van de publieke klassen en methoden die ze toevoegen aan het project. Wanneer we meerdere deeltaken afgewerkt hebben, zullen we \textit{integration tests} schrijven om te garanderen dat deze samenwerken zoals verwacht (bv. multi-region checkpointing).
+
+	\section{Geteste functionaliteit}
+	\begin{itemize}
+		\item \texttt{AliasTest.cpp}: de \textit{alias method} voor random number generation.
+		\item \texttt{AwesomiumTests.cpp}: de dependency op \textit{Awesomium}, onze UI-library.
+		\item \texttt{MpiTests.cpp}: de dependency op MPI, voor multi-region functionaliteit.
+		\item \texttt{ParsePopulationModel.cpp}: het parsen van een (al dan niet geldig) XML-populatiemodel.
+		\item \texttt{ParseSimulationConfig.cpp}: het parsen van een (al dan niet geldige) simulatie-configuratiefile.
+		\item \texttt{RunSimulator.cpp}: het uitvoeren van de simulator op basis van een configuratiefile.
+	\end{itemize}
+
+\end{document}
